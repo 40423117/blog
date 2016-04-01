@@ -30,6 +30,7 @@
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
 <v t="amd.20160329125251.1"><vh>@clean template-20160329.md</vh></v>
+<v t="leo.20160401114622.1"><vh>@clean admin-20160401.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -69,5 +70,21 @@ g.es("admin pelican 執行完畢")
 <t tx="leo.20160401105240.1"></t>
 <t tx="leo.20160401105245.1"></t>
 <t tx="leo.20160401105246.1"></t>
+<t tx="leo.20160401114622.1">@language md
+Title: admin-網際內容管理
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423117
+@others
+個人網際內容管理
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;a href="http://cms-nfuhouses.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;
+
+&lt;a href="http://40423117.github.io/blog/post/index.html"&gt;Pelican&lt;/a&gt;
+
+&lt;a href="http://wp-nfuhouses.rhcloud.com/"&gt;WordPress&lt;/a&gt;
+</t>
 </tnodes>
 </leo_file>
