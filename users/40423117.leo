@@ -15,7 +15,7 @@
 <v t="amd.20160329164739.1" a="E"><vh>假如要送到 gh-pages 分支, 使用下列按鈕</vh>
 <v t="amd.20160329164739.2"><vh>@button gh-pages pelican</vh></v>
 </v>
-<v t="leo.20160408095026.1"><vh>wordpress</vh>
+<v t="leo.20160408095026.1" a="E"><vh>wordpress</vh>
 <v t="leo.20160408095046.1"><vh>@button new-to-wp</vh></v>
 <v t="leo.20160408095101.1"><vh>@button edit-to-wp </vh></v>
 <v t="leo.20160408095102.1"><vh>@button get-from-wp</vh></v>
@@ -34,9 +34,6 @@
 <v t="amd.20160329124921.1"><vh>@edit index.html</vh></v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="amd.20160329125251.1"><vh>@clean template-20160329.md</vh>
-<v t="leo.20160408101406.1"><vh>7</vh></v>
-</v>
 <v t="leo.20160401114622.1"><vh>@clean admin-20160401.md</vh></v>
 </v>
 </v>
@@ -46,17 +43,6 @@
 <t tx="amd.20160329124757.1"></t>
 <t tx="amd.20160329124849.1"></t>
 <t tx="amd.20160329124903.1"></t>
-<t tx="amd.20160329125251.1">@language md
-Title: template-啟動電腦輔助機械設計手冊編輯
-Category: 規劃
-Tags: CADLAB, Ｍanual, MCAD
-Author: kmol
-@others
-手冊類別分為 OnShape, Solvespace, FreeCAD, Elmer, V-rep 以及 Jupyter, 加上範例, 編寫模式與架構則透過 Leo Editor, Pelican,  與 Github pull requests 完成.
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;a href="http://cad-lab.github.io/manual"&gt;http://cad-lab.github.io/manual&lt;/a&gt;</t>
 <t tx="amd.20160329162138.1"></t>
 <t tx="amd.20160329163719.1"></t>
 <t tx="amd.20160329163719.2">@language python
@@ -89,9 +75,9 @@ Author: 40423117
 
 &lt;a href="http://cms-nfuhouses.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;
 
-&lt;a href="http://40423117.github.io/blog/post/index.html"&gt;Pelican&lt;/a&gt;
+&lt;a href="http://40423117.github.io/blog/post/index.html"&gt;Pelican 靜態網址&lt;/a&gt;
 
-&lt;a href="http://wp-nfuhouses.rhcloud.com/"&gt;WordPress&lt;/a&gt;
+&lt;a href="http://wp-mde40423117.rhcloud.com"&gt;WordPress 動態網誌&lt;/a&gt;
 </t>
 <t tx="leo.20160408095026.1"></t>
 <t tx="leo.20160408095046.1">@language python
@@ -124,8 +110,8 @@ def get_cat_tag_content(data):
 os.environ['TZ'] = 'Asia/Taipei'
  
 #################################
-filepath = "E:/password.txt"
-wordpress = "wp-nfuhouses.rhcloud.com/"
+filepath = "y:/tmp/password.txt"
+wordpress = "wp-mde40423117.rhcloud.com"
 fo = open(filepath, "r+")
 data = []
 for line in fo.readlines():
@@ -204,8 +190,8 @@ def get_cat_tag_content(data):
 os.environ['TZ'] = 'Asia/Taipei'
  
 #################################
-filepath = "E:/password.txt"
-wordpress = "wp-nfuhouses.rhcloud.com/"
+filepath = "F:/pw.txt"
+wordpress = "wp-mde40423117.rhcloud.com/"
 fo = open(filepath, "r+")
 data = []
 for line in fo.readlines():
@@ -258,8 +244,8 @@ import xmlrpc.client
 import html
  
 #################################
-filepath = "E:/password.txt"
-wordpress = "wp-nfuhouses.rhcloud.com/"
+filepath = "F:/pw.txt"
+wordpress = "wp-mde40423117.rhcloud.com/"
 fo = open(filepath, "r+")
 data = []
 for line in fo.readlines():
@@ -317,6 +303,5 @@ p.b = line1 + line2 + line3 + line4 + line5 + post_content + "\n"
 # 因為節點資料更新, commander 必須 redraw
 c.redraw() 
 g.es("資料已經取回")</t>
-<t tx="leo.20160408101406.1"></t>
 </tnodes>
 </leo_file>
