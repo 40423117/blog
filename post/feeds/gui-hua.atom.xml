@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="./" rel="alternate"></link><link href="./feeds/gui-hua.atom.xml" rel="self"></link><id>./</id><updated>2016-04-25T22:10:15+08:00</updated><entry><title>admin-網際內容管理</title><link href="./admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-25T22:10:15+08:00</updated><author><name>40423117</name></author><id>tag:,2016-04-25:./admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="http://40423117.github.io/blog/post/" rel="alternate"></link><link href="http://40423117.github.io/blog/post/feeds/gui-hua.atom.xml" rel="self"></link><id>http://40423117.github.io/blog/post/</id><updated>2016-04-25T15:10:15+08:00</updated><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-25T15:10:15+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-25:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
 
 
-&lt;p&gt;&lt;a href="http://cms-nfuhouses.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cms-mde40423117.rhcloud.com/"&gt;CMSimply 內容管理系統&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://40423117.github.io/blog/post/index.html"&gt;Pelican 靜態網址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://wp-mde40423117.rhcloud.com"&gt;WordPress 動態網誌&lt;/a&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry></feed>

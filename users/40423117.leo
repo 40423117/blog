@@ -34,7 +34,9 @@
 <v t="amd.20160329124921.1"><vh>@edit index.html</vh></v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="leo.20160401114622.1"><vh>@clean admin-20160401.md</vh></v>
+<v t="leo.20160401114622.1" a="E"><vh>@clean admin-20160401.md</vh>
+<v t="leo.20160425224655.1"><vh>11</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -73,7 +75,7 @@ Author: 40423117
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;a href="http://cms-nfuhouses.rhcloud.com/get_page?heading=head+1"&gt;CMSimply&lt;/a&gt;
+&lt;a href="https://cms-mde40423117.rhcloud.com/"&gt;CMSimply 內容管理系統&lt;/a&gt;
 
 &lt;a href="http://40423117.github.io/blog/post/index.html"&gt;Pelican 靜態網址&lt;/a&gt;
 
@@ -190,8 +192,8 @@ def get_cat_tag_content(data):
 os.environ['TZ'] = 'Asia/Taipei'
  
 #################################
-filepath = "F:/pw.txt"
-wordpress = "wp-mde40423117.rhcloud.com/"
+filepath = "y:/tmp/password.txt"
+wordpress = "wp-mde40423117.rhcloud.com"
 fo = open(filepath, "r+")
 data = []
 for line in fo.readlines():
@@ -244,8 +246,8 @@ import xmlrpc.client
 import html
  
 #################################
-filepath = "F:/pw.txt"
-wordpress = "wp-mde40423117.rhcloud.com/"
+filepath = "y:/tmp/password.txt"
+wordpress = "wp-mde40423117.rhcloud.com"
 fo = open(filepath, "r+")
 data = []
 for line in fo.readlines():
@@ -303,5 +305,6 @@ p.b = line1 + line2 + line3 + line4 + line5 + post_content + "\n"
 # 因為節點資料更新, commander 必須 redraw
 c.redraw() 
 g.es("資料已經取回")</t>
+<t tx="leo.20160425224655.1"></t>
 </tnodes>
 </leo_file>

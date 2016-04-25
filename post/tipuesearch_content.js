@@ -1,1 +1,1 @@
-var tipuesearch = {"pages":[{"title":"admin-網際內容管理","url":"./admin-wang-ji-nei-rong-guan-li.html","text":"個人網際內容管理 CMSimply Pelican 靜態網址 WordPress 動態網誌","tags":"規劃"}]};
+var tipuesearch = {"pages":[{"tags":"規劃","title":"admin-網際內容管理","text":"個人網際內容管理 CMSimply 內容管理系統 Pelican 靜態網址 WordPress 動態網誌","url":"http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html"}]};
