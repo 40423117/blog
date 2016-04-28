@@ -326,7 +326,7 @@ Pelican與WordPress同步設定
     
 再申請一隻WordPress帳號，角色設定為：編輯(Editor)
 
-&lt;img src="images/editor.PNG" width="250" alt="WordPress帳號設定"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog/post/images/editor.PNG" width="250" alt="WordPress帳號設定"&gt;&lt;/img&gt;
 
     #password.txt 輸入格式為以下
     帳號
