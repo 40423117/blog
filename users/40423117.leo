@@ -37,6 +37,9 @@
 <v t="leo.20160401114622.1" a="E"><vh>@clean admin-20160401.md</vh>
 <v t="leo.20160425224655.1"><vh>11</vh></v>
 </v>
+<v t="leo.20160429014510.1" a="E"><vh>@clean admin-20160429.md</vh>
+<v t="leo.20160429020217.1"><vh>16</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -306,5 +309,33 @@ p.b = line1 + line2 + line3 + line4 + line5 + post_content + "\n"
 c.redraw() 
 g.es("資料已經取回")</t>
 <t tx="leo.20160425224655.1"></t>
+<t tx="leo.20160429014510.1">@language md
+Title: admin-Pelican與WordPress同步設定
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423117
+@others
+Pelican與WordPress同步設定
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+    #輸入你帳號密碼儲存的地方
+    filepath = "y:/tmp/password.txt"
+    #輸入你wordpress的網址
+    wordpress = "wp-mde40423117.rhcloud.com"
+    
+再申請一隻WordPress帳號，角色設定為：編輯(Editor)
+
+&lt;img src="images/editor.PNG" width="250" alt="WordPress帳號設定"&gt;&lt;/img&gt;
+
+    #password.txt 輸入格式為以下
+    帳號
+    密碼
+
+同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp
+
+&lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
+<t tx="leo.20160429020217.1"></t>
 </tnodes>
 </leo_file>
