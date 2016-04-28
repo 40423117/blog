@@ -38,7 +38,7 @@
 <v t="leo.20160425224655.1"><vh>11</vh></v>
 </v>
 <v t="leo.20160429014510.1" a="E"><vh>@clean admin-20160429.md</vh>
-<v t="leo.20160429020217.1"><vh>16</vh></v>
+<v t="leo.20160429022139.1"><vh>19</vh></v>
 </v>
 </v>
 </v>
@@ -326,7 +326,7 @@ Pelican與WordPress同步設定
     
 再申請一隻WordPress帳號，角色設定為：編輯(Editor)
 
-&lt;img src="http://40423117.github.io/blog/post/images/editor.PNG" width="250" alt="WordPress帳號設定"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/editor.PNG" width="600" alt="WordPress帳號設定"&gt;&lt;/img&gt;
 
     #password.txt 輸入格式為以下
     帳號
@@ -336,6 +336,6 @@ Pelican與WordPress同步設定
 
 &lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
-<t tx="leo.20160429020217.1"></t>
+<t tx="leo.20160429022139.1"></t>
 </tnodes>
 </leo_file>
