@@ -40,8 +40,15 @@
 <v t="leo.20160429014510.1"><vh>@clean admin-20160429.md</vh>
 <v t="leo.20160429022139.1"><vh>19</vh></v>
 </v>
-<v t="leo.20160429023401.1"><vh>@clean admin-20160428.md</vh></v>
-<v t="leo.20160429031908.1"><vh>@clean admin-20160427.md</vh></v>
+<v t="leo.20160429023401.1"><vh>@clean admin-20160428.md</vh>
+<v t="leo.20160429033202.1"><vh>22</vh></v>
+</v>
+<v t="leo.20160429031908.1"><vh>@clean admin-20160427.md</vh>
+<v t="leo.20160429033206.1"><vh>24</vh></v>
+</v>
+<v t="leo.20160429033514.1" a="E"><vh>@clean admin-20160426.md</vh>
+<v t="leo.20160429040741.1"><vh>27</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -485,7 +492,7 @@ Cross Over (EIA/TIA 568B) 線
 
 &lt;img src="http://40423117.github.io/blog_data/images/line1.jpg" width="600"&gt;&lt;/img&gt;
 
-白線排在前
+把線捲開，白線排在前
 
 &lt;img src="http://40423117.github.io/blog_data/images/line2.jpg" width="600"&gt;&lt;/img&gt;
 
@@ -493,7 +500,7 @@ Cross Over (EIA/TIA 568B) 線
 
 &lt;img src="http://40423117.github.io/blog_data/images/line3.jpg" width="600"&gt;&lt;/img&gt;
 
-線頭需要拉直
+把線拉直
 
 &lt;img src="http://40423117.github.io/blog_data/images/line4.jpg" width="600"&gt;&lt;/img&gt;
 
@@ -511,5 +518,72 @@ Cross Over (EIA/TIA 568B) 線
 
 &lt;img src="http://40423117.github.io/blog_data/images/line9.jpg" width="600"&gt;&lt;/img&gt;
     </t>
+<t tx="leo.20160429033202.1"></t>
+<t tx="leo.20160429033206.1"></t>
+<t tx="leo.20160429033514.1">@language md
+Title: admin-跳線測試與共用網路
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423117
+@others
+使用一條跳線，對接兩台電腦使其連線共用其中一台的網路
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+兩台電腦對接且共用網路的方法
+------------
+1.先停用自己的網卡(已經連上網路的)
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy1.PNG" width="600"&gt;&lt;/img&gt;
+
+2.按下要共用網路的網卡右鍵→內容→IPv4設定以下
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy2.PNG" width="600"&gt;&lt;/img&gt;
+
+3.打開OpenDHCPServer資料夾下的 RunStandAlone.bat
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy3.PNG" width="600"&gt;&lt;/img&gt;
+
+4.到欲共用網路的電腦下，設定該台電腦的網卡，以第2步驟修改成以下
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy4.PNG" width="600"&gt;&lt;/img&gt;
+
+5.接著，到自己的電腦下，查看剛剛開啟的cmd檔，會顯示以下
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy10.PNG" width="600"&gt;&lt;/img&gt;
+
+6.啟動自己的網卡(已經連上網路的)
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy5.PNG" width="600"&gt;&lt;/img&gt;
+
+7.打開CCProxy.exe
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy6.PNG" width="80"&gt;&lt;/img&gt;
+
+8.選取"選項"
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy7.PNG" width="80"&gt;&lt;/img&gt;
+
+9.全部打勾，記下port號
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy8.PNG" width="600"&gt;&lt;/img&gt;
+
+10.到欲共用網路的電腦下，打開瀏覽器設定Proxy，IP位址為自己的IP(桌機)，Port號為剛剛記錄下來的
+
+&lt;img src="http://40423117.github.io/blog_data/images/ccproxy9.PNG" width="800"&gt;&lt;/img&gt;
+
+設定完成後，即可共用網路。
+
+桌機與Raspberry pi 3 model b對接且共用網路的方法
+------------
+
+與上方的操作方式雷同。
+第四步驟改成
+
+打開Xming資料夾中的XLanch.exe→One Window
+→Open session via XDMCP→打IP位址(不要跟桌機一樣)→完成
+
+其他步驟大致上都差不多。</t>
+<t tx="leo.20160429040741.1"></t>
 </tnodes>
 </leo_file>
