@@ -1,5 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="http://40423117.github.io/blog/post/" rel="alternate"></link><link href="http://40423117.github.io/blog/post/feeds/gui-hua.atom.xml" rel="self"></link><id>http://40423117.github.io/blog/post/</id><updated>2016-04-28T18:49:15+08:00</updated><entry><title>admin-Pelican與WordPress同步設定</title><link href="http://40423117.github.io/blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html" rel="alternate"></link><updated>2016-04-28T18:49:15+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html</id><summary type="html">&lt;p&gt;Pelican與WordPress同步設定&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="http://40423117.github.io/blog/post/" rel="alternate"></link><link href="http://40423117.github.io/blog/post/feeds/gui-hua.atom.xml" rel="self"></link><id>http://40423117.github.io/blog/post/</id><updated>2016-04-29T03:19:21+08:00</updated><entry><title>admin-網路線製作流程紀錄</title><link href="http://40423117.github.io/blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html" rel="alternate"></link><updated>2016-04-29T03:19:21+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html</id><summary type="html">&lt;p&gt;一條 568b 網路線及一條跳線&lt;/p&gt;
+
+
+&lt;h2&gt;網路線接法&lt;/h2&gt;
+&lt;p&gt;EIA/TIA 568B 的標準雙絞線 (兩端採相同色線排列) 
+腳位：接頭朝前, 耳朵朝下 
+接法：先排出橘、藍、綠、棕，白線排在前，排好後，藍白與綠白對調
+顏色：橘白-橘-綠白-藍-藍白-綠-棕白-棕&lt;/p&gt;
+&lt;h2&gt;跳線接法&lt;/h2&gt;
+&lt;p&gt;Cross Over (EIA/TIA 568B) 線 
+(一端採標準 EIA/TIA 568B 色線排列, 另一端則將綠線與橘線對調) 
+腳位：接頭朝前, 耳朵朝下 
+顏色：綠白-綠-橘白-藍-藍白-橘-棕白-棕 (即將上面正常線的橘線與綠線對調)&lt;/p&gt;
+&lt;h2&gt;網路線示範圖示&lt;/h2&gt;
+&lt;p&gt;先排出橘、藍、綠、棕&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line1.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;白線排在前&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line2.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;排好後，藍白與綠白對調&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line3.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;線頭需要拉直&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line4.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;接頭耳朵要朝下！很重要！！好像都會錯在這個地方！&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line5.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line6.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;現在只接了一端，還好可以從另一端在塞入保護殼！記得要放保護殼&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line7.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line8.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;完成囉！●▽●&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line9.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-畫出系上網路配置圖</title><link href="http://40423117.github.io/blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html" rel="alternate"></link><updated>2016-04-29T02:35:15+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html</id><summary type="html">&lt;p&gt;使用Python3+nwdiag畫出網路配置圖&lt;/p&gt;
+
+
+&lt;h2&gt;系上網路配置&lt;/h2&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/inter1.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/inter2.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/inter3.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;h2&gt;畫出網路配置圖&lt;/h2&gt;
+&lt;p&gt;使用 Python3 與 &lt;a href="http://blockdiag.com/en/" target="_blank"&gt;http://blockdiag.com/en/&lt;/a&gt;中的 nwdiag 工具繪製機械設計工程系的網路配置圖.&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#安裝 blockdiag 模組
+pip install blockdiag
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/blockdiag.PNG" width="250" alt="blockdiag 安裝"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#安裝 nwdiag 模組
+pip install nwdiag
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/nwdiag.png" width="250" alt="nwdiag 安裝"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;到SciTE下貼上以下程式碼&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;nwdiag&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;default_fontsize&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;校主幹&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cloud&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="err"&gt;校主幹&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt; &lt;span class="err"&gt;系路由器&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;系主幹&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;140.130.17.0/24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;系路由器&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.254&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;雲端點名網路&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;八樓集線器&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.82&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;七樓集線器&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;六樓集線器&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;系伺服器群&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;八樓主幹&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;17.10-82&amp;quot;&lt;/span&gt;
+        &lt;span class="err"&gt;八樓集線器&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.82&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.10-15&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.16-25&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.26-60&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="n"&gt;CAD_CAE&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;17.83&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;八樓集線器&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.82&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAD_NAT&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.82&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAE_NAT&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.83&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;電腦輔助設計室&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;192.168.1.0/24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;CAD_NAT&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;192.168.1.1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAD1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAD2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;CAD64&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.100&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;電腦輔助繪圖室&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;192.168.1.0/24&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;CAE_NAT&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;192.168.1.1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAE1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;CAE2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="n"&gt;CAE64&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.100&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;七樓主幹&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.83-90&amp;quot;&lt;/span&gt;
+        &lt;span class="err"&gt;七樓集線器&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.61-63&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.64-70&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.71-75&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="err"&gt;六樓主幹&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.91-100&amp;quot;&lt;/span&gt;
+        &lt;span class="err"&gt;六樓集線器&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.76-78&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.79-80&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+        &lt;span class="err"&gt;老師&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="err"&gt;伺服器群&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;140.130.17.81-95&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;根據&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;Execute&lt;/span&gt; &lt;span class="n"&gt;nwdiag&lt;/span&gt; &lt;span class="n"&gt;command&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;nwdiag&lt;/span&gt; &lt;span class="n"&gt;simple&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;diag&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;ls&lt;/span&gt; &lt;span class="n"&gt;simple&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;
+&lt;span class="n"&gt;simple&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;將上述程式碼儲存為 .diag檔後，
+假設路徑在 y:\tmp 底下則輸入 &lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;nwdiag&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;simple&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;diag&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/diag.png" width="250" alt="diag png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;在該路徑底下就會有 simple 圖檔(.png)可以使用&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/cadlab.png" width="800" alt="cadlab png"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-Pelican與WordPress同步設定</title><link href="http://40423117.github.io/blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html" rel="alternate"></link><updated>2016-04-29T02:33:29+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html</id><summary type="html">&lt;p&gt;Pelican與WordPress同步設定&lt;/p&gt;
 
 
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
@@ -25,7 +223,7 @@ wordpress = &amp;quot;wp-mde40423117.rhcloud.com&amp;quot;
 &lt;p&gt;同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-28T18:35:51+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-29T02:33:29+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href="https://cms-mde40423117.rhcloud.com/"&gt;CMSimply 內容管理系統&lt;/a&gt;&lt;/p&gt;

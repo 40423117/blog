@@ -34,12 +34,14 @@
 <v t="amd.20160329124921.1"><vh>@edit index.html</vh></v>
 <v t="amd.20160329124849.1"><vh>進入 content 目錄</vh></v>
 <v t="amd.20160329124903.1" a="E"><vh>@path content</vh>
-<v t="leo.20160401114622.1" a="E"><vh>@clean admin-20160401.md</vh>
+<v t="leo.20160401114622.1"><vh>@clean admin-20160401.md</vh>
 <v t="leo.20160425224655.1"><vh>11</vh></v>
 </v>
-<v t="leo.20160429014510.1" a="E"><vh>@clean admin-20160429.md</vh>
+<v t="leo.20160429014510.1"><vh>@clean admin-20160429.md</vh>
 <v t="leo.20160429022139.1"><vh>19</vh></v>
 </v>
+<v t="leo.20160429023401.1"><vh>@clean admin-20160428.md</vh></v>
+<v t="leo.20160429031908.1"><vh>@clean admin-20160427.md</vh></v>
 </v>
 </v>
 </vnodes>
@@ -337,5 +339,177 @@ Pelican與WordPress同步設定
 &lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 <t tx="leo.20160429022139.1"></t>
+<t tx="leo.20160429023401.1">@language md
+Title: admin-畫出系上網路配置圖
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423117
+@others
+使用Python3+nwdiag畫出網路配置圖
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+系上網路配置
+------------
+&lt;img src="http://40423117.github.io/blog_data/images/inter1.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/inter2.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/inter3.jpg" width="600"&gt;&lt;/img&gt;
+
+畫出網路配置圖
+------------
+使用 Python3 與 [http://blockdiag.com/en/](http://blockdiag.com/en/){:target="_blank"}中的 nwdiag 工具繪製機械設計工程系的網路配置圖.
+
+    #安裝 blockdiag 模組
+    pip install blockdiag
+    
+&lt;img src="http://40423117.github.io/blog_data/images/blockdiag.PNG" width="250" alt="blockdiag 安裝"&gt;&lt;/img&gt;
+
+    #安裝 nwdiag 模組
+    pip install nwdiag
+
+&lt;img src="http://40423117.github.io/blog_data/images/nwdiag.png" width="250" alt="nwdiag 安裝"&gt;&lt;/img&gt;
+
+到SciTE下貼上以下程式碼
+
+~~~python
+nwdiag {
+    default_fontsize = 15;
+    校主幹 [shape = cloud];
+    校主幹 -- 系路由器;
+ 
+    network 系主幹{
+        address = "140.130.17.0/24";
+        系路由器 [address="140.130.17.254"];
+        雲端點名網路;
+        八樓集線器 [address="140.130.17.82"];
+        七樓集線器;
+        六樓集線器;
+        系伺服器群;
+    }
+ 
+    network 八樓主幹{
+        address="17.10-82"
+        八樓集線器 [address="140.130.17.82"];
+        老師1伺服器群 [address="140.130.17.10-15"];
+        老師2伺服器群 [address="140.130.17.16-25"];
+        老師3伺服器群 [address="140.130.17.26-60"];
+    }
+ 
+    network CAD_CAE{
+        address="17.83";
+        八樓集線器 [address="140.130.17.82"];
+        CAD_NAT [address="140.130.17.82"];
+        CAE_NAT [address="140.130.17.83"];
+    }
+ 
+    network 電腦輔助設計室{
+        address="192.168.1.0/24";
+        CAD_NAT [address="192.168.1.1"];
+        CAD1 [address=".2"];
+        CAD2;
+        CAD64 [address=".100"];
+    }
+ 
+    network 電腦輔助繪圖室{
+        address="192.168.1.0/24";
+        CAE_NAT [address="192.168.1.1"];
+        CAE1 [address=".2"];
+        CAE2;
+        CAE64 [address=".100"];
+    }
+ 
+    network 七樓主幹{
+        address="140.130.17.83-90"
+        七樓集線器;
+        老師4伺服器群 [address="140.130.17.61-63"];
+        老師5伺服器群 [address="140.130.17.64-70"];
+        老師6伺服器群 [address="140.130.17.71-75"];
+    }
+ 
+    network 六樓主幹{
+        address="140.130.17.91-100"
+        六樓集線器;
+        老師7伺服器群 [address="140.130.17.76-78"];
+        老師8伺服器群 [address="140.130.17.79-80"];
+        老師9伺服器群 [address="140.130.17.81-95"];
+    }
+}
+~~~
+
+根據
+~~~python
+Execute nwdiag command:
+$ nwdiag simple.diag
+$ ls simple.png
+simple.png
+~~~
+將上述程式碼儲存為 .diag檔後，
+假設路徑在 y:\tmp 底下則輸入 
+~~~python
+nwdiag y:\tmp\simple.diag
+~~~
+
+&lt;img src="http://40423117.github.io/blog_data/images/diag.png" width="250" alt="diag png"&gt;&lt;/img&gt;
+
+在該路徑底下就會有 simple 圖檔(.png)可以使用
+
+&lt;img src="http://40423117.github.io/blog_data/images/cadlab.png" width="800" alt="cadlab png"&gt;&lt;/img&gt;
+    </t>
+<t tx="leo.20160429031908.1">@language md
+Title: admin-網路線製作流程紀錄
+Category: 規劃
+Tags: CADLAB, Ｍanual, MCAD
+Author: 40423117
+@others
+一條 568b 網路線及一條跳線
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+網路線接法
+------------
+EIA/TIA 568B 的標準雙絞線 (兩端採相同色線排列) 
+腳位：接頭朝前, 耳朵朝下 
+接法：先排出橘、藍、綠、棕，白線排在前，排好後，藍白與綠白對調
+顏色：橘白-橘-綠白-藍-藍白-綠-棕白-棕
+
+跳線接法
+------------
+Cross Over (EIA/TIA 568B) 線 
+(一端採標準 EIA/TIA 568B 色線排列, 另一端則將綠線與橘線對調) 
+腳位：接頭朝前, 耳朵朝下 
+顏色：綠白-綠-橘白-藍-藍白-橘-棕白-棕 (即將上面正常線的橘線與綠線對調)
+
+網路線示範圖示
+------------
+先排出橘、藍、綠、棕
+
+&lt;img src="http://40423117.github.io/blog_data/images/line1.jpg" width="600"&gt;&lt;/img&gt;
+
+白線排在前
+
+&lt;img src="http://40423117.github.io/blog_data/images/line2.jpg" width="600"&gt;&lt;/img&gt;
+
+排好後，藍白與綠白對調
+
+&lt;img src="http://40423117.github.io/blog_data/images/line3.jpg" width="600"&gt;&lt;/img&gt;
+
+線頭需要拉直
+
+&lt;img src="http://40423117.github.io/blog_data/images/line4.jpg" width="600"&gt;&lt;/img&gt;
+
+接頭耳朵要朝下！很重要！！好像都會錯在這個地方！
+
+&lt;img src="http://40423117.github.io/blog_data/images/line5.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line6.jpg" width="600"&gt;&lt;/img&gt;
+
+現在只接了一端，還好可以從另一端在塞入保護殼！記得要放保護殼
+
+&lt;img src="http://40423117.github.io/blog_data/images/line7.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line8.jpg" width="600"&gt;&lt;/img&gt;
+
+完成囉！●▽●
+
+&lt;img src="http://40423117.github.io/blog_data/images/line9.jpg" width="600"&gt;&lt;/img&gt;
+    </t>
 </tnodes>
 </leo_file>
