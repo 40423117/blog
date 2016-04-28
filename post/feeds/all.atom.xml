@@ -13,7 +13,7 @@ wordpress = &amp;quot;wp-mde40423117.rhcloud.com&amp;quot;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;p&gt;再申請一隻WordPress帳號，角色設定為：編輯(Editor)&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/editor.PNG" width="250" alt="WordPress帳號設定"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/editor.PNG" width="600" alt="WordPress帳號設定"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
 2
 3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#password.txt 輸入格式為以下
@@ -22,7 +22,10 @@ wordpress = &amp;quot;wp-mde40423117.rhcloud.com&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;p&gt;同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-28T18:35:51+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
+&lt;p&gt;同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-28T18:35:51+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href="https://cms-mde40423117.rhcloud.com/"&gt;CMSimply 內容管理系統&lt;/a&gt;&lt;/p&gt;
