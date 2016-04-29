@@ -1,64 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="http://40423117.github.io/blog/post/" rel="alternate"></link><link href="http://40423117.github.io/blog/post/feeds/gui-hua.atom.xml" rel="self"></link><id>http://40423117.github.io/blog/post/</id><updated>2016-04-28T20:37:51+08:00</updated><entry><title>admin-跳線測試與共用網路</title><link href="http://40423117.github.io/blog/post/admin-tiao-xian-ce-shi-yu-gong-yong-wang-lu.html" rel="alternate"></link><updated>2016-04-28T20:37:51+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-tiao-xian-ce-shi-yu-gong-yong-wang-lu.html</id><summary type="html">&lt;p&gt;使用一條跳線，對接兩台電腦使其連線共用其中一台的網路&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>40423117 的網誌</title><link href="http://40423117.github.io/blog/post/" rel="alternate"></link><link href="http://40423117.github.io/blog/post/feeds/gui-hua.atom.xml" rel="self"></link><id>http://40423117.github.io/blog/post/</id><updated>2016-04-29T02:14:30+08:00</updated><entry><title>admin-Pelican與WordPress同步設定</title><link href="http://40423117.github.io/blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html" rel="alternate"></link><updated>2016-04-29T02:14:30+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html</id><summary type="html">&lt;p&gt;Pelican與WordPress同步設定&lt;/p&gt;
 
 
-&lt;h2&gt;兩台電腦對接且共用網路的方法&lt;/h2&gt;
-&lt;p&gt;1.先停用自己的網卡(已經連上網路的)&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy1.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;2.按下要共用網路的網卡右鍵→內容→IPv4設定以下&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy2.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;3.打開OpenDHCPServer資料夾下的 RunStandAlone.bat&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy3.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;4.到欲共用網路的電腦下，設定該台電腦的網卡，以第2步驟修改成以下&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy4.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;5.接著，到自己的電腦下，查看剛剛開啟的cmd檔，會顯示以下&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy10.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;6.啟動自己的網卡(已經連上網路的)&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy5.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;7.打開CCProxy.exe&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy6.PNG" width="80"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;8.選取"選項"&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy7.PNG" width="80"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;9.全部打勾，記下port號&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy8.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;10.到欲共用網路的電腦下，打開瀏覽器設定Proxy，IP位址為自己的IP(桌機)，Port號為剛剛記錄下來的&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy9.PNG" width="800"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;設定完成後，即可共用網路。&lt;/p&gt;
-&lt;h2&gt;桌機與Raspberry pi 3 model b對接且共用網路的方法&lt;/h2&gt;
-&lt;p&gt;與上方的操作方式雷同。
-第四步驟改成&lt;/p&gt;
-&lt;p&gt;打開Xming資料夾中的XLanch.exe→One Window
-→Open session via XDMCP→打IP位址(不要跟桌機一樣)→完成&lt;/p&gt;
-&lt;p&gt;其他步驟大致上都差不多。&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網路線製作流程紀錄</title><link href="http://40423117.github.io/blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html" rel="alternate"></link><updated>2016-04-28T20:19:21+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html</id><summary type="html">&lt;p&gt;一條 568b 網路線及一條跳線&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#輸入你帳號密碼儲存的地方
+filepath = &amp;quot;y:/tmp/password.txt&amp;quot;
+#輸入你wordpress的網址
+wordpress = &amp;quot;wp-mde40423117.rhcloud.com&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
+&lt;p&gt;再申請一隻WordPress帳號，角色設定為：編輯(Editor)&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/editor.PNG" width="600" alt="WordPress帳號設定"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#password.txt 輸入格式為以下
+帳號
+密碼
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h2&gt;網路線接法&lt;/h2&gt;
-&lt;p&gt;EIA/TIA 568B 的標準雙絞線 (兩端採相同色線排列) 
-腳位：接頭朝前, 耳朵朝下 
-接法：先排出橘、藍、綠、棕，白線排在前，排好後，藍白與綠白對調
-顏色：橘白-橘-綠白-藍-藍白-綠-棕白-棕&lt;/p&gt;
-&lt;h2&gt;跳線接法&lt;/h2&gt;
-&lt;p&gt;Cross Over (EIA/TIA 568B) 線 
-(一端採標準 EIA/TIA 568B 色線排列, 另一端則將綠線與橘線對調) 
-腳位：接頭朝前, 耳朵朝下 
-顏色：綠白-綠-橘白-藍-藍白-橘-棕白-棕 (即將上面正常線的橘線與綠線對調)&lt;/p&gt;
-&lt;h2&gt;網路線示範圖示&lt;/h2&gt;
-&lt;p&gt;先排出橘、藍、綠、棕&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line1.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;把線捲開，白線排在前&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line2.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;排好後，藍白與綠白對調&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line3.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;把線拉直&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line4.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;接頭耳朵要朝下！很重要！！好像都會錯在這個地方！&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line5.jpg" width="600"&gt;&lt;/img&gt;
-&lt;img src="http://40423117.github.io/blog_data/images/line6.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;現在只接了一端，還好可以從另一端在塞入保護殼！記得要放保護殼&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line7.jpg" width="600"&gt;&lt;/img&gt;
-&lt;img src="http://40423117.github.io/blog_data/images/line8.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;p&gt;完成囉！●▽●&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line9.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-畫出系上網路配置圖</title><link href="http://40423117.github.io/blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html" rel="alternate"></link><updated>2016-04-28T19:35:15+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html</id><summary type="html">&lt;p&gt;使用Python3+nwdiag畫出網路配置圖&lt;/p&gt;
+&lt;p&gt;同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-畫出系上網路配置圖</title><link href="http://40423117.github.io/blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html" rel="alternate"></link><updated>2016-04-29T02:14:30+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-hua-chu-xi-shang-wang-lu-pei-zhi-tu.html</id><summary type="html">&lt;p&gt;使用Python3+nwdiag畫出網路配置圖&lt;/p&gt;
 
 
 &lt;h2&gt;系上網路配置&lt;/h2&gt;
@@ -227,33 +194,69 @@ pip install nwdiag
 
 &lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/diag.png" width="250" alt="diag png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;在該路徑底下就會有 simple 圖檔(.png)可以使用&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/cadlab.png" width="800" alt="cadlab png"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-Pelican與WordPress同步設定</title><link href="http://40423117.github.io/blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html" rel="alternate"></link><updated>2016-04-28T19:33:29+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-pelicanyu-wordpresstong-bu-she-ding.html</id><summary type="html">&lt;p&gt;Pelican與WordPress同步設定&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/cadlab.png" width="800" alt="cadlab png"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網路線製作流程紀錄</title><link href="http://40423117.github.io/blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html" rel="alternate"></link><updated>2016-04-29T02:14:30+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-wang-lu-xian-zhi-zuo-liu-cheng-ji-lu.html</id><summary type="html">&lt;p&gt;一條 568b 網路線及一條跳線&lt;/p&gt;
 
 
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#輸入你帳號密碼儲存的地方
-filepath = &amp;quot;y:/tmp/password.txt&amp;quot;
-#輸入你wordpress的網址
-wordpress = &amp;quot;wp-mde40423117.rhcloud.com&amp;quot;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;h2&gt;網路線接法&lt;/h2&gt;
+&lt;p&gt;EIA/TIA 568B 的標準雙絞線 (兩端採相同色線排列) 
+腳位：接頭朝前, 耳朵朝下 
+接法：先排出橘、藍、綠、棕，白線排在前，排好後，藍白與綠白對調
+顏色：橘白-橘-綠白-藍-藍白-綠-棕白-棕&lt;/p&gt;
+&lt;h2&gt;跳線接法&lt;/h2&gt;
+&lt;p&gt;Cross Over (EIA/TIA 568B) 線 
+(一端採標準 EIA/TIA 568B 色線排列, 另一端則將綠線與橘線對調) 
+腳位：接頭朝前, 耳朵朝下 
+顏色：綠白-綠-橘白-藍-藍白-橘-棕白-棕 (即將上面正常線的橘線與綠線對調)&lt;/p&gt;
+&lt;h2&gt;網路線示範圖示&lt;/h2&gt;
+&lt;p&gt;先排出橘、藍、綠、棕&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line1.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;把線捲開，白線排在前&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line2.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;排好後，藍白與綠白對調&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line3.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;把線拉直&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line4.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;接頭耳朵要朝下！很重要！！好像都會錯在這個地方！&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line5.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line6.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;現在只接了一端，還好可以從另一端在塞入保護殼！記得要放保護殼&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line7.jpg" width="600"&gt;&lt;/img&gt;
+&lt;img src="http://40423117.github.io/blog_data/images/line8.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;完成囉！●▽●&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/line9.jpg" width="600"&gt;&lt;/img&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-跳線測試與共用網路</title><link href="http://40423117.github.io/blog/post/admin-tiao-xian-ce-shi-yu-gong-yong-wang-lu.html" rel="alternate"></link><updated>2016-04-29T02:14:30+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-tiao-xian-ce-shi-yu-gong-yong-wang-lu.html</id><summary type="html">&lt;p&gt;使用一條跳線，對接兩台電腦使其連線共用其中一台的網路&lt;/p&gt;
 
-&lt;p&gt;再申請一隻WordPress帳號，角色設定為：編輯(Editor)&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/editor.PNG" width="600" alt="WordPress帳號設定"&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;#password.txt 輸入格式為以下
-帳號
-密碼
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;p&gt;同步WordPress時候，要點的是文章.MarkDown 而不是點@Button new-to-wp&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/164606701" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/164606701"&gt;pelican&amp;amp;wordpress&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-28T19:33:29+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-28:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
+&lt;h2&gt;兩台電腦對接且共用網路的方法&lt;/h2&gt;
+&lt;p&gt;1.先停用自己的網卡(已經連上網路的)&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy1.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;2.按下要共用網路的網卡右鍵→內容→IPv4設定以下&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy2.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;3.打開OpenDHCPServer資料夾下的 RunStandAlone.bat&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy3.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;4.到欲共用網路的電腦下，設定該台電腦的網卡，以第2步驟修改成以下&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy4.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;5.接著，到自己的電腦下，查看剛剛開啟的cmd檔，會顯示以下&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy10.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;6.啟動自己的網卡(已經連上網路的)&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy5.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;7.打開CCProxy.exe&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy6.PNG" width="80"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;8.選取"選項"&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy7.PNG" width="80"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;9.全部打勾，記下port號&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy8.PNG" width="600"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;10.到欲共用網路的電腦下，打開瀏覽器設定Proxy，IP位址為自己的IP(桌機)，Port號為剛剛記錄下來的&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://40423117.github.io/blog_data/images/ccproxy9.PNG" width="800"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後，即可共用網路。&lt;/p&gt;
+&lt;h2&gt;桌機與Raspberry pi 3 model b對接且共用網路的方法&lt;/h2&gt;
+&lt;p&gt;與上方的操作方式雷同。
+第四步驟改成&lt;/p&gt;
+&lt;p&gt;打開Xming資料夾中的XLanch.exe→One Window
+→Open session via XDMCP→打IP位址(不要跟桌機一樣)→完成&lt;/p&gt;
+&lt;p&gt;其他步驟大致上都差不多。&lt;/p&gt;
+&lt;p&gt;以下影片斟酌觀看，可以單看文字表達就可以。
+&lt;iframe src="https://player.vimeo.com/video/164645697" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/164645697"&gt;跳線測試與共用網路&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="CADLAB"></category><category term="Ｍanual"></category><category term="MCAD"></category></entry><entry><title>admin-網際內容管理</title><link href="http://40423117.github.io/blog/post/admin-wang-ji-nei-rong-guan-li.html" rel="alternate"></link><updated>2016-04-29T02:14:30+08:00</updated><author><name>40423117</name></author><id>tag:40423117.github.io,2016-04-29:blog/post/admin-wang-ji-nei-rong-guan-li.html</id><summary type="html">&lt;p&gt;個人網際內容管理&lt;/p&gt;
 
 
 &lt;p&gt;&lt;a href="https://cms-mde40423117.rhcloud.com/"&gt;CMSimply 內容管理系統&lt;/a&gt;&lt;/p&gt;

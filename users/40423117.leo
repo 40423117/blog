@@ -583,7 +583,11 @@ Author: 40423117
 打開Xming資料夾中的XLanch.exe→One Window
 →Open session via XDMCP→打IP位址(不要跟桌機一樣)→完成
 
-其他步驟大致上都差不多。</t>
+其他步驟大致上都差不多。
+
+以下影片斟酌觀看，可以單看文字表達就可以。
+&lt;iframe src="https://player.vimeo.com/video/164645697" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/164645697"&gt;跳線測試與共用網路&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;40423117&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</t>
 <t tx="leo.20160429040741.1"></t>
 </tnodes>
 </leo_file>
